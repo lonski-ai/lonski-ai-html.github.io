@@ -1,0 +1,52 @@
+@import url("header.css");
+@import url("footer.css");
+
+:root{
+    --DeepSkyBlue: #00BFFF;
+    --DodgerBlue: #1E90FF;
+    --LightGray: #D3D3D3;
+    --DarkGrey:	#A9A9A9;
+    --CatalogLinl: #3074b9;
+    --CatalogLinlHover: #3b91e3;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+	background: black;
+    color: white;
+    font: 18px sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.content {
+    flex: 1 0 auto;
+}
+
+.container {
+	position: relative;
+    margin: 0 auto;
+    width: 90%;
+    
+}
+
+#upbutton {
+	position: fixed;
+	display: none;
+    bottom: 110px;
+    right: 30px;
+	height: 60px;
+    width: 60px;
+    cursor: pointer;    
+    z-index: 999;
+}

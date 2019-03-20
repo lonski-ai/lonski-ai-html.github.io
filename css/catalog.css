@@ -1,0 +1,129 @@
+body {
+    background: white;
+    color: black;
+}
+
+.catalog {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.catalog__header {
+    padding: 1em 0;
+    font-size: 2em;
+}
+
+.catalog__block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.catalog__itam {
+    position: relative;
+    margin: 2em;
+    width: 20%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.catalog__itam-anons {
+    transition: all 0.5s;
+    position: absolute;
+}
+
+.catalog__itam-anons:after {
+    content: "→";
+    font-size: 2em;
+}
+
+.catalog__icon {
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.catalog__item-header {
+    text-align: center;
+}
+
+.catalog__itam:hover .catalog__itam-anons {
+    transform: translate(100%, 0);
+}
+
+.catalog__itam:hover .catalog__itam-info {
+    transform: translate(0, 0);
+}
+
+.catalog__itam-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    transform: translate(-101%, 0);
+    color: white;
+}
+
+.catalog__smartphone {
+    background: url("./../image/catalog/smartphone.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.catalog__notebooks {
+    background: url("./../image/catalog/notebooks.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.catalog__tablet {
+    background: url("./../image/catalog/tablet.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.catalog__monoblock {
+    background: url("./../image/catalog/monoblock.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.catalog__accessories {
+    background: url("./../image/catalog/accessories.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.catalog__tv {
+    background: url("./../image/catalog/tv.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.catalog__photo-camera {
+    background: url("./../image/catalog/photo-camera.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.catalog__itam-link {
+    padding: 0.5em 1em;
+    background: var(--CatalogLinl);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.catalog__itam-link:hover {
+    background: var(--CatalogLinlHover);
+}
+
+@media (max-device-width: 750px) {
+    .catalog__itam {
+        width: 50%;
+    }
+}
+
+@media (max-device-width: 450px) {
+    .catalog__itam {
+        width: 100%;
+    }
+}

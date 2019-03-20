@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="../image/icon/favicon.ico" type="image/x-icon">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/catalog.css" rel="stylesheet">
+  <script src="../js/upbatton.js"></script>
+  <title>Каталог</title>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__block">
+          <div class="header__logo">
+            <p><a class="header__logo-link" href="index.html" title="Главная">Shop <span class="header__logo_blue">24</span></a></p>
+          </div>
+          <input class="header__input" id="nav-click" type="checkbox">
+          <label class="header__icon" for="nav-click"></label>
+          <nav class="header__menu">
+            <a class="menu__link active" href="catalog.html" title="Каталог">Каталог</a>
+            <a class="menu__link" href="news.html" title="Новости">Новости</a>
+            <a class="menu__link" href="service.html" title="Сервис">Сервис</a>
+            <a class="menu__link" href="contacts.html" title="Контакты">Контакты</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <section class="catalog">
+        <div class="container">
+          <h2 class="catalog__header">Каталог товаров</h2>
+          <div class="catalog__block">
+            <div class="catalog__itam">
+              <div class="catalog__itam-anons">
+                <img class="catalog__icon" src="./../image/icon/smartphone-catalog.png" alt="Смартфоны">
+                <h3 class="catalog__item-header">Смартфоны</h3>
+              </div>
+              <div class="catalog__itam-info catalog__smartphone">
+                <p>Описание раздела</p>
+                <a class="catalog__itam-link" href="catalog-section-smartphone.html" title="Смартфоны">Подробнее</a>
+              </div>
+            </div>
+            <div class="catalog__itam">
+              <div class="catalog__itam-anons">
+                <img class="catalog__icon" src="./../image/icon/notebook-catalog.png" alt="Ноутбуки">
+                <h3 class="catalog__item-header">Ноутбуки</h3>
+              </div>
+              <div class="catalog__itam-info catalog__notebooks">
+                <p>Описание раздела</p>
+                <a class="catalog__itam-link" href="catalog-section-notebook.html" title="Ноутбуки">Подробнее</a>
+              </div>
+            </div>
+            <div class="catalog__itam">
+              <div class="catalog__itam-anons">
+                <img class="catalog__icon" src="./../image/icon/tablet-catalog.png" alt="Планшеты">
+                <h3 class="catalog__item-header">Планшеты</h3>
+              </div>
+              <div class="catalog__itam-info catalog__tablet">
+                <p>Описание раздела</p>
+                <a class="catalog__itam-link" href="catalog-section-tablet.html" title="Планшеты">Подробнее</a>
+              </div>
+            </div>
+            <div class="catalog__itam">
+              <div class="catalog__itam-anons">
+                <img class="catalog__icon" src="./../image/icon/monoblock-catalog.png" alt="Моноблоки">
+                <h3 class="catalog__item-header">Моноблоки</h3>
+              </div>
+              <div class="catalog__itam-info catalog__monoblock">
+                <p>Описание раздела</p>
+                <a class="catalog__itam-link" href="catalog-section-monoblock.html" title="Моноблоки">Подробнее</a>
+              </div>
+            </div>
+            <div class="catalog__itam">
+              <div class="catalog__itam-anons">
+                <img class="catalog__icon" src="./../image/icon/accessories-catalog.png" alt="Аксессуары">
+                <h3 class="catalog__item-header">Аксессуары</h3>
+              </div>
+              <div class="catalog__itam-info catalog__accessories">
+                <p>Описание раздела</p>
+                <a class="catalog__itam-link" href="catalog-section-accessories.html" title="Аксессуары">Подробнее</a>
+              </div>
+            </div>
+            <div class="catalog__itam">
+              <div class="catalog__itam-anons">
+                <img class="catalog__icon" src="./../image/icon/tv-catalog.png" alt="Телевизоры">
+                <h3 class="catalog__item-header">Телевизоры</h3>
+              </div>
+              <div class="catalog__itam-info catalog__tv">
+                <p>Описание раздела</p>
+                <a class="catalog__itam-link" href="catalog-section-tv.html" title="Телевизоры">Подробнее</a>
+              </div>
+            </div>
+            <div class="catalog__itam">
+              <div class="catalog__itam-anons">
+                <img class="catalog__icon" src="./../image/icon/photo-camera-catalog.png" alt="Фотоаппараты">
+                <h3 class="catalog__item-header">Фотоаппараты</h3>
+              </div>
+              <div class="catalog__itam-info catalog__photo-camera">
+                <p>Описание раздела</p>
+                <a class="catalog__itam-link" href="catalog-section-photo-camera.html" title="Фотоаппараты">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <a id="upbutton" href="#" onclick="smoothJumpUp(); return false;">
+      <img src="../image/icon/up.png" alt="Top" border="none" title="Наверх">
+    </a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__block">
+          <div class="footer__logo">
+            <p>Shop <span class="footer__logo_blue">24</span></p>
+          </div>
+          <div class="footer__info social">
+            <div class="footer__info-title">Соцсети</div>
+            <div class="footer__info-text">
+              <div class="footer__social-item">
+                <a href="#" title="Twitter"><img src="../image/icon/twitter.png"></a>
+              </div>
+              <div class="footer__social-item">
+                <a href="#" title="Вконтакте"><img src="../image/icon/vk.png"></a>
+              </div>
+              <div class="footer__social-item">
+                <a href="#" title="Facebook"><img src="../image/icon/facebook.png"></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__info">
+            <div class="footer__info-title">Контакты</div>
+            <div class="footer__info-text">Телефон: +7 987 654-32-10 Email: shop24@mail.com</div>
+          </div>
+          <div class="footer__info">
+            <div class="footer__info-title">Адрес</div>
+            <div class="footer__info-text">г. Москва, Россия, улица Ушакова д.56, корпус 2, этаж 8</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

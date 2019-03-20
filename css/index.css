@@ -1,0 +1,443 @@
+.block {
+    width: 50%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.block__text {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 30%;
+    font-size: 1.2em;
+}
+
+.big-name {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: white;
+    text-decoration: none;
+    color: black;
+    transition: 0.1s;
+}
+
+.button:hover {
+    background: var(--DodgerBlue);
+    color: white;
+}
+
+.button:active {
+    opacity: 0.7;
+    transform: scale(0.97);
+}
+
+
+input {
+    display: none;
+}
+
+.smart,
+.notebook,
+.camera,
+.mono,
+.tablets,
+.accessories {
+    display: none;
+}
+
+#smart:checked ~ .block .smart,
+#notebook:checked ~ .block .notebook,
+#camera:checked ~ .block .camera,
+#mono:checked ~ .block .mono,
+#tablets:checked ~ .block .tablets,
+#accessories:checked ~ .block .accessories {
+    display: block;
+}
+
+.slider__item {
+    text-align: center;
+}
+
+.slider-control {
+    display: flex;
+    justify-content: space-around;
+}
+
+.smart-icon,
+.notebook-icon,
+.camera-icon,
+.mono-icon,
+.tablets-icon,
+.accessories-icon {
+    opacity: 0.6;
+}
+
+.smart-icon:hover,
+.notebook-icon:hover,
+.camera-icon:hover,
+.mono-icon:hover,
+.tablets-icon:hover,
+.accessories-icon:hover {
+    opacity: 1;
+
+}
+
+.slider__item img {
+    display: block;
+    width: 3em;
+    margin: 0 auto 0.5em;
+}
+
+.smart-icon,
+.notebook-icon,
+.camera-icon,
+.mono-icon,
+.tablets-icon,
+.accessories-icon {
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#smart:checked ~ .slider-control .slider__item .smart-icon,
+#notebook:checked ~ .slider-control .slider__item .notebook-icon,
+#camera:checked ~ .slider-control .slider__item .camera-icon,
+#mono:checked ~ .slider-control .slider__item .mono-icon,
+#tablets:checked ~ .slider-control .slider__item .tablets-icon,
+#accessories:checked ~ .slider-control .slider__item .accessories-icon {
+    opacity: 1;
+}
+
+.why-we {
+    font-size: 1rem;
+}
+
+.why-we__header {
+    margin: 5em 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.why-we__block {
+    background: #fafafa;
+    color: black;
+}
+
+.why-we__wrap,
+.catalog__wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.why-we__item {
+    position: relative;
+    top: -4em;
+    width: 20%;
+    padding: 1em 1em;
+    background: white;
+    border-radius: 10px;
+}
+
+.why-we__item:hover {
+    transform: translateY(-1em);
+}
+
+.why-we__hedear {
+    padding-bottom: 1em;
+    border-bottom: 2px solid black;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.why-we__text {
+    font-size: 1.2em;
+}
+
+.why-we__icon {
+    width: 28%;
+}
+
+.new-product {
+    background: #fafafa;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.new-product__header {
+    margin: 0;
+    padding-top: 2em;
+    font-size: 2em;
+}
+
+.new-product__text {
+    padding: 2em;
+    font-size: 1.2em;
+}
+
+.new-product__link {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #323232;
+    color: white;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.new-product__link:hover {
+    background: var(--DodgerBlue);
+}
+
+.new-product__link:active {
+    opacity: 0.7;
+    transform: scale(0.97);
+}
+
+.new-product__smart, .new-product__vr, .new-product__accessories {
+    display: none;
+}
+
+#new-product__smart:checked ~ .new-product__block .new-product__smart,
+#new-product__vr:checked ~ .new-product__block .new-product__vr,
+#new-product__accessories:checked ~ .new-product__block .new-product__accessories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider-dot-control {
+    padding: 1em;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.new-product__1,
+.new-product__2,
+.new-product__3 {
+    display: inline-block;
+    margin: 0 0.2em;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #bbb;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.new-product__1:hover,
+.new-product__2:hover,
+.new-product__3:hover {
+    background: #474747;
+}
+
+#new-product__smart:checked ~ .new-product__block .slider-dot-control .new-product__1,
+#new-product__vr:checked ~ .new-product__block .slider-dot-control .new-product__2,
+#new-product__accessories:checked ~ .new-product__block .slider-dot-control .new-product__3 {
+    background: #474747;
+}
+
+.catalog {
+    color: black;
+    background: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.catalog__header {
+    padding: 2em 0;
+    margin: 0;
+    font-size: 2em;
+}
+
+.catalog__item {
+    position: relative;
+    flex-basis: 30%;
+}
+
+.catalog__text {
+    text-align: center;
+}
+
+.price {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.catalog__description,
+#description1:checked ~ .catalog__description,
+#description2:checked ~ .catalog__description,
+#description3:checked ~ .catalog__description,
+#description4:checked ~ .catalog__description,
+#description5:checked ~ .catalog__description,
+#description6:checked ~ .catalog__description,
+#description7:checked ~ .catalog__description,
+#description8:checked ~ .catalog__description,
+#description9:checked ~ .catalog__description {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    background: white;
+    visibility: visible;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.catalog__description {
+    opacity: 0;
+    visibility: hidden;
+}
+
+input {
+    display: none;
+}
+
+.catalog__label {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background: var(--DodgerBlue);
+    text-align: center;
+    transition: transform 0.5s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.catalog__label:after {
+    content: '\002B';
+    font-size: 3em;
+    color: white;
+}
+
+#description1:checked ~ label,
+#description2:checked ~ label,
+#description3:checked ~ label,
+#description4:checked ~ label,
+#description5:checked ~ label,
+#description6:checked ~ label,
+#description7:checked ~ label,
+#description8:checked ~ label,
+#description9:checked ~ label {
+    transform: rotate(45deg);
+}
+
+.catalog-link {
+    display: inline-block;
+    padding: 1em 2em;
+    margin: 3em 0;
+    text-decoration: none;
+    background: var(--DodgerBlue);
+    color: white;
+    opacity: 0.8;
+    transition: 0.1s;
+}
+
+.catalog-link:hover {
+    opacity: 1;
+}
+
+.catalog-link:active {
+    transform: scale(0.97);
+}
+
+@media (max-device-width: 1100px) {
+    .block {
+        width: 60%;
+    }
+
+    .block__text {
+        position: static;
+        width: 100%;
+        margin: 1em 0;
+        text-align: center;
+    }
+}
+
+@media (max-device-width: 930px) {
+    .catalog__item {
+        flex-basis: 34%;
+    }
+}
+
+@media (max-device-width: 878px) {
+    .why-we__item {
+        width: 30%;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-device-width: 850px) {
+    .slider-control {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-device-width: 730px) {
+    .catalog__wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-device-width: 680px) {
+    .slider-control {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-device-width: 645px) {
+    .why-we__item {
+        width: 50%;
+    }
+
+    .new-product__smart,
+    .new-product__vr,
+    .new-product__accessories {
+        flex-direction: column;
+    }
+
+    .new-product__text {
+        order: 2;
+    }
+
+    .new-product__foto {
+        order: 1;
+    }
+}
+
+@media (max-device-width: 560px) {
+    .block {
+        width: 100%;
+    }
+}
+
+@media (max-device-width: 440px) {
+    .catalog__description,
+    #description1:checked ~ .description,
+    #description2:checked ~ .description,
+    #description3:checked ~ .description,
+    #description4:checked ~ .description,
+    #description5:checked ~ .description,
+    #description6:checked ~ .description,
+    #description7:checked ~ .description,
+    #description8:checked ~ .description,
+    #description9:checked ~ .description {
+        font-size: 1rem;
+    }
+}
